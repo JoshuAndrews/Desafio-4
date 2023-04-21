@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('font/Lato-Bold.ttf');
+}
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('font/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('font/Merriweather-Regular.ttf');
+}
+:root{
+    --font1 : 'Lato-Bold';
+    --font2 : 'Lato-Regular';
+    --font3 : 'Merriweather-Regular';
+    --cor1 : #FFFFFF;
+    --cor2 :#F7FAFC;
+    --cor3 : #1A202C;
+    --cor4 : #04C35C;
+    --cor5 : #2B6CB0;
+}   
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+}
+#ilustracao {
+    flex:1;
+    background-color: var(--cor2);
+    max-width: 1120px;
+    min-width: 700px; 
+    height: 100vh;
+}
+#ilustracao > img{
+    margin: 200px;
+    max-width: 50%;
+    max-height: 50%;
+}
+#telaDeLogin {
+    flex: 1;
+    width: 800px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+}
+#telaDeLogin > .titulo{
+    font-family: var(--font3);
+    padding: 30px 30px 30px 0px
+}
+.login label,.login input {
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font3);
+}
+.login input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #E8E8E8;
+    padding: 5px;
+    border-radius: 3px;
+}
+.login input:focus{
+    border-color: none;
+}
+.lembrarEsquecer input,.lembrarEsquecer p,.lembrarEsquecer a {
+  display: inline-block;
+  margin: 10px 0px 10px 0px;
+  font-family:var(--font2) ;
+}
+.lembrarEsquecer p{
+    padding-right: 30px;
+}
+.lembrarEsquecer a{
+    text-decoration: none;
+    color: var(--cor5);
+}
+.botao button {
+    display: block;
+    margin: 20px;
+    width: 310px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    font-family: var(--font1);
+    cursor: pointer;
+}
+.btn1{
+    color: var(--cor1);
+    background-color: var(--cor4);
+}
+.btn2 {
+    color: var(--cor1);
+    background-color: var(--cor3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn2 img {
+    margin-right: 10px;
+    width: 30px;
+}
+.criar{
+    margin-top: 100px;
+    font-family: var(--font2);
+}
+.criar a{
+    text-decoration: none;
+    color:var(--cor5)
+}
+@media screen and (max-width: 1215px) {
+    #ilustracao {
+      display: none;
+    }
+    #telaDeLogin{
+        margin: 0 auto
+    }
+  }
